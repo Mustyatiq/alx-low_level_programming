@@ -3,7 +3,7 @@
 
 /**
  * main - prints "and that piece of art is useful\" - Dora Korpar, 2015-10-19"
- * Return - Returns 1
+ * Return: Returns 1
  */
 
 int main(void)
