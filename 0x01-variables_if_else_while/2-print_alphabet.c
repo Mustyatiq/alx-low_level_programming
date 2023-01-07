@@ -12,6 +12,6 @@ int main(void)
 	while (n < 123)
 	{
 		putchar(n);
-		n++
+		n++;
 	}
 }
