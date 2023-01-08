@@ -17,7 +17,7 @@ int main(void)
 		putchar(p);
 		putchar(q);
 
-		if (p == 57 && q == 58)
+		if (p == 56 && q == 57)
 			break;
 
 		putchar(44);
