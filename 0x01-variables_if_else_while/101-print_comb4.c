@@ -17,7 +17,7 @@ int main(void)
 		putchar(p);
 		putchar(q);
 
-		if (p == 56 && q == 57)
+		if (n == 56 && p == 57)
 			break;
 
 		putchar(44);
@@ -26,10 +26,10 @@ int main(void)
 
 		if (q == 58)
 		{
-			n++;
 			p++;
 			q = p + 1;
-		}
+		} else if (p == 57 && q == 58)
+			n++;
 	}
 
 		putchar('\n');
