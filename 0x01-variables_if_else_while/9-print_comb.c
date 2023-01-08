@@ -15,8 +15,8 @@ int main(void)
 		if (n == 57)
 			goto s;
 		putchar(44);
-s:
 		putchar(32);
+s:
 		n++;
 	}
 
