@@ -16,10 +16,9 @@ int main(void)
 		putchar(p);
 
 		if (n == 56 && p == 57)
-			goto s;
+			break;
 		putchar(44);
 		putchar(32);
-s:
 		p++;
 		if (p == 57)
 		{
