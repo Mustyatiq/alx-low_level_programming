@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *  * main - prints alphabet in lowercase and in reverse
- *   * Return: 0
- *    */
+ ** main - prints alphabet in lowercase and in reverse
+ ** Return: 0
+ **/
 
 int main(void)
 {
