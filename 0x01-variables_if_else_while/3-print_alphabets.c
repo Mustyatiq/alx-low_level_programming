@@ -12,6 +12,7 @@ int main(void)
 	while (n  < 173)
 	{
 		putchar(n);
+		n++;
 	}
 
 	n = 65;
@@ -19,6 +20,7 @@ int main(void)
 	while (n < 91)
 	{
 		putchar(n);
+		n++;
 	}
 	putchar('\n');
 
