@@ -12,11 +12,11 @@ int main(void)
 	while (n <= 57)
 	{
 		putchar(n);
-		putchar(32);
 		if (n == 57)
 			goto s;
 		putchar(44);
 s:
+		putchar(32);
 		n++;
 	}
 
