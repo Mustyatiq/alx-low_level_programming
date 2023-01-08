@@ -20,7 +20,7 @@ int main(void)
 		putchar(44);
 		putchar(32);
 		p++;
-		if (p == 57)
+		if (p == 58)
 		{
 			n++;
 			p = n + 1;
