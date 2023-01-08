@@ -24,7 +24,7 @@ int main(void)
 		putchar(32);
 		q++;
 
-		if (q == 57)
+		if (q == 58)
 		{
 			n++;
 			p++;
