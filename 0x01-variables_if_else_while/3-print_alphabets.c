@@ -9,7 +9,7 @@ int main(void)
 {
 	int n = 97;
 
-	while (n  < 173)
+	while (n < 123)
 	{
 		putchar(n);
 		n++;
@@ -22,6 +22,7 @@ int main(void)
 		putchar(n);
 		n++;
 	}
+
 	putchar('\n');
 
 	return (0);
