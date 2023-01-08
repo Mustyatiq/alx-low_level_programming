@@ -17,18 +17,17 @@ int main(void)
 		putchar(p);
 		putchar(q);
 
-		if (n == 56 && q == 58)
+		if (p == 57 && q == 58)
 			break;
 
 		putchar(44);
 		putchar(32);
-		p++;
 		q++;
 
 		if (q == 57)
 		{
 			n++;
-			p = n + 1;
+			p++;
 			q = p + 1;
 		}
 	}
