@@ -14,7 +14,7 @@ int main(void)
 	{
 		while (c < 58)
 		{
-			if (a == 57 && b == 57)
+			if (a == 57 && b == 56)
 				break;
 			putchar(a);
 			putchar(b);
