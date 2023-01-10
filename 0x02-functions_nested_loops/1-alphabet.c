@@ -14,9 +14,6 @@ int main(void)
 
 void print_alphabet(void)
 {
-	for (int n = 97; n < 123; n++)
-	{
-		_putchar(n);
-	}
+	char alpha[] = {a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z};
 	_putchar('\n');
 }
