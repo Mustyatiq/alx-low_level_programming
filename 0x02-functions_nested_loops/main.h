@@ -1,4 +1,4 @@
-char _putchar(char);
+char _putchar(char*);
 void print_alphabet(void);
 void print_alphabet(void);
 int _islower(int c);
