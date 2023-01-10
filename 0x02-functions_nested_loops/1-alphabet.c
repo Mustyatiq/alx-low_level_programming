@@ -15,8 +15,7 @@ int main(void)
 void print_alphabet(void)
 {
 	char alpha[] = "abcdefghijklmnopqrstuvwxyz\n";
-	_putchar(alpha);
-	_putchar('\n');
+	_putchar(&alpha);
 
 	return;
 }
