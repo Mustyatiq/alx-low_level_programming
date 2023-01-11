@@ -18,6 +18,6 @@ void print_to_98(int n)
 			_putchar(32);
 		} else 
 			_putchar(n);
-		n = i
+		n = i;
 	}
 }
