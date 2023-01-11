@@ -14,7 +14,9 @@ int main(void)
 
 void print_alphabet(void)
 {
-	for (int n = 0; n < 25; n++)
+	int n;
+
+	for (n = 0; n < 25; n++)
 	{
 		_putchar('a' + n);
 	}
