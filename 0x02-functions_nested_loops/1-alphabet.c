@@ -14,8 +14,8 @@ int main(void)
 
 void print_alphabet(void)
 {
-	char alpha[] = "abcdefghijklmnopqrstuvwxyz\n";
-	_putchar(&alpha);
-
-	return;
+	for (int n = 0; n < 25; n++)
+	{
+		_putchar('a' + n);
+	}
 }
