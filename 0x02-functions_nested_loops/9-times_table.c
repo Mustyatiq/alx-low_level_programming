@@ -23,11 +23,11 @@ void times_table(void)
 				_putchar((n / 10) + '0');
 				_putchar((n % 10) + '0');
 			}
-			if (j < 9 && m > 9)
+			if (j <= 8 && m > 9)
 			{
 				_putchar(44);
 				_putchar(32);
-			} else
+			} else if (j <= 8 && m < 10)
 			{
 				_putchar(44);
 				_putchar(32);
