@@ -3,6 +3,7 @@
 /**
  * _islower - checks for lower case character
  * Return: void
+ * @c : input to function
  */
 
 int _islower(int c)
