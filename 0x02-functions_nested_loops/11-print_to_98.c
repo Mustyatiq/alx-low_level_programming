@@ -10,9 +10,8 @@ void print_to_98(int n)
 {
 	int i;
 
-	for (i = n; i < 99; i++)
+	while (1)
 	{
-		n = i;
 
 		if (n < 0)
 		{
@@ -32,6 +31,12 @@ void print_to_98(int n)
 		{
 			_putchar(44);
 			_putchar(32);
+		} else
+		{
+			_putchar('\n');
+			break;
 		}
+
+		n++;
 	}
 }
