@@ -8,12 +8,12 @@
 
 void print_to_98(int n)
 {
-	int m = n;
+	int m = n, p;
 
 	while (1)
 	{
 		m = n;
-		int p = m - ((m / 100) * 100);
+		p = m - ((m / 100) * 100);
 
 		if (m < 0)
 		{
