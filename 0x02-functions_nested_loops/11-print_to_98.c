@@ -20,19 +20,18 @@ void print_to_98(int n)
 			n *= -1;
 		}
 
-		if (n != 98 && n > 9)
+		if (n > 9)
 		{
 			_putchar((n / 10) + '0');
 			_putchar((n % 10) + '0');
-			_putchar(44);
-			_putchar(32);
-		} else if (n != 98 && n < 10)
+		} else
 		{
 			_putchar(n + '0');
+		}
+		if (n != 98)
+		{
 			_putchar(44);
 			_putchar(32);
-		} else
-			_putchar(n + '0');
+		}
 	}
-
 }
