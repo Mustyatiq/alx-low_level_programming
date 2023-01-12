@@ -12,6 +12,7 @@ void print_to_98(int n)
 
 	while (1)
 	{
+		m = n;
 
 		if (m < 0)
 		{
@@ -26,7 +27,7 @@ void print_to_98(int n)
 		} else if (m > 99)
 		{
 			_putchar((m / 100) + '0');
-			_putchar((m % 10) + '0');
+			_putchar(((m - 100) / 10) + '0');
 			_putchar((m % 10) + '0');
 		} else
 		{
