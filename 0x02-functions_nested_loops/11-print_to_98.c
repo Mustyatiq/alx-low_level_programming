@@ -6,13 +6,6 @@
  * @n: input
  * Return: void
  */
-int main(void)
-{
-	print_to_98(-999);
-
-	return (0);
-}
-
 
 void print_to_98(int n)
 {
