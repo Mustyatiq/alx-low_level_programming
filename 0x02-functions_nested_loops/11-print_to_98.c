@@ -10,8 +10,10 @@ void print_to_98(int n)
 {
 	int i;
 
-	for (i = n; i < 100; i++)
+	for (i = n; i < 99; i++)
 	{
+		n = i;
+
 		if (n < 0)
 		{
 			_putchar('-');
@@ -32,5 +34,5 @@ void print_to_98(int n)
 		} else
 			_putchar(n + '0');
 	}
-		n = i;
+
 }
