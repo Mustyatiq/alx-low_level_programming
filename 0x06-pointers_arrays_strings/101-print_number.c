@@ -39,7 +39,7 @@ void print_number(int n)
 		}
 	} else
 	{
-		if(neg) putchar('-');
+		if(neg) _putchar('-');
 		_putchar('0' + n);
 	}
 }
