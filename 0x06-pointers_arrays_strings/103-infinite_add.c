@@ -18,43 +18,38 @@
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-}
+	int a, b, i, j, k, sum, carry, remain;
+	char store;
 
-/**
-* add_strings - Adds the numbers stored in two strings.
-* @n1: The string containing the first number to be added.
-* @n2: The string containing the second number to be added.
-* @r: The buffer to store the result.
-* @r_index: The current index of the buffer.
-*
-* Return: If r can store the sum - a pointer to the result.
-*         If r cannot store the sum - 0.
-*/
-
-char *add_strings(char *n1, char *n2, char *r, int r_index)
-{
-	int num, tens = 0;
-
-	for (; *n1 && *n2; n1--, n2--, r_index--)
+	i = j = k = carry = remain = sum = 0;
+	while(*(n1 + i) != '\0') i++; /*length of n1*/
+	while(*(n2 + j) != '\0') j++; /*length of n2*/
+	if (i >= size_r || i == (size_r - 1) || j >= size_r || j == size_r - 1) 
+			return((int) 0);
+	while(k < size_r) /*Calculating the sum*/
 	{
-		num = (*n1 - '0') + (*n2 - '0');
-		num += tens;
-		*(r + r_index) = (num % 10) + '0';
-		tens = num / 10;
+		a = b = 0;
+		if (k < i) a = (*(n1 + (i - k - 1)) - 48);
+		if (k < j) b = (*(n2 + (j - k - 1)) - 48); 
+		sum = a + b + carry;
+		carry = sum / 10;
+		remain = sum % 10;
+		if (sum)
+		{
+			*(r + k) = 48 + remain;
+			*(r + k + 1) = '\0';
+		} else *(r + k) = '\0';
+		if (k >= i && k >= j) break;
+		k++;
 	}
-
-	for (; *n1; n1--; r_index++)
+	i = j = 0;
+	while(*(r + j) != '\0') j++; /*Lenght of buffer with result in it*/
+	while (i < (j  + 1) / 2) /*Reversing the string in buffer due to summing from left*/
 	{
-		num = *(n1 - '0') + tens; 
-		*(r + r_index) = (num % 10) + '0';
-		tens = num / 10;
+		store = *(r + i);
+		*(r + i) = *(r + (j - i - 1));
+		*(r + (j - i - 1)) = store;
+		i++;
 	}
-
-	for (; *n2; n2--;  r_index--)
-	{
-		num = (*n2 - '0') + tens; 
-		*(r + r_index) = (num % 10) + '0';
-		tens = num / 10; 
-	}
-	
+	return (r);
 }
