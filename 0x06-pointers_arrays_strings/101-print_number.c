@@ -4,19 +4,42 @@
 *@n:integer to be printed
 *
 */
+
 void print_number(int n)
 {
-	unsigned int num = n;
+	int j, k, l, neg;
 
-	if (n < 0)
-	{
-		_putchar('-');
-		num = -num;
+	j = 10;
+	neg = 0;
+	if(n < 0)
+	{ 
+		n *= -1;
+		neg = 1;
 	}
-
-	if ((num / 10) > 0)
-		print_number(num / 10);
-
-	_putchar((num % 10) + '0');
+	/*Finds multiple of 10 in which the modulo will give the first digit of the number*/
+	while(1)
+	{
+		if ((n / j  > 0 && n / j < 10) || n < 10)
+			break;
+		j *= 10;
+	}
+	/*printf("J is :%d\n", j);*/
+	l = j;
+	k = n;
+	/*Calculating the digits and printing them. uncomment the printf to see how it works*/
+	if(n >= 10)
+	{
+		if (neg) _putchar('-');
+		while (j >= 1)
+		{
+			if(j != l)
+				k = k % (j * 10);
+			_putchar('0' + (k / j));	
+			j /= 10;
+		}
+	} else
+	{
+		if(neg) putchar('-');
+		_putchar('0' + n);
+	}
 }
-
